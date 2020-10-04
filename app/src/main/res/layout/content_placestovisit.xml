@@ -127,7 +127,7 @@ android:layout_height="wrap_content">
             android:textStyle="bold"
             style="@style/modifiedEditText"
             android:hint="Hotel Name"
-            android:inputType="date"
+            android:inputType="text"
             android:textColor="@color/whiteTextColor"/>
 
     </android.support.design.widget.TextInputLayout>

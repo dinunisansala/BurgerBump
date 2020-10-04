@@ -88,7 +88,7 @@ public class HotelForm extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "Plase Enter Your email", Toast.LENGTH_SHORT).show();
                     }
                     else if(TextUtils.isEmpty(rooms.getText().toString())){
-                        Toast.makeText(getApplicationContext(), "Plase Enter number of Rooms", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Plase Enter Added Beverages", Toast.LENGTH_SHORT).show();
                     }
                     else if(TextUtils.isEmpty(NIC.getText().toString())){
                         Toast.makeText(getApplicationContext(), "Plase Enter Your NIC", Toast.LENGTH_SHORT).show();
@@ -104,7 +104,8 @@ public class HotelForm extends AppCompatActivity {
                         form.setNIC(NIC.getText().toString().trim());
                         databaseReference.push().setValue(form);
                         databaseReference.child(NIC.getText().toString().trim()).setValue(form);
-                        Toast.makeText(getApplicationContext(), "Your Booking added Successfully", Toast.LENGTH_SHORT).show();
+
+                        Toast.makeText(getApplicationContext(), "Your Order added Successfully", Toast.LENGTH_SHORT).show();
                     }
                     } finally {
                     clearControls();

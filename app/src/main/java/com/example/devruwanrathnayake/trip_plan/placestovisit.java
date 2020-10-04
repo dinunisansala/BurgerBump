@@ -79,7 +79,7 @@ public class placestovisit extends AppCompatActivity {
                             pvform.setDepaturedate(depaturedate.getText().toString().trim());
                             databaseReference.push().setValue(pvform);
                             databaseReference.child(NIC.getText().toString().trim()).setValue(pvform);
-                            Toast.makeText(getApplicationContext(), "Your Place Added Successfully", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "Your Order Added Successfully", Toast.LENGTH_SHORT).show();
                         }
                     }
                     finally {

@@ -98,7 +98,7 @@ public class placesDetails extends AppCompatActivity {
                             pvform.setDepaturedate(depaturedate.getText().toString().trim());
                             databaseReference = FirebaseDatabase.getInstance().getReference().child("Places").child(NIC.getText().toString().trim());
                             databaseReference.setValue(pvform);
-                            Toast.makeText(getApplicationContext(), "Your Booking Updated Successfully", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "Your Order Updated Successfully", Toast.LENGTH_SHORT).show();
                         }
                         else{
                             Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT).show();

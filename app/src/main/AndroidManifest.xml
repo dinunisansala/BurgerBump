@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".placesDetails"
-            android:label="@string/title_activity_places_details"
+            android:label="@string/Details"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".placestovisit"

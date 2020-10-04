@@ -106,7 +106,7 @@ public class HotelDetails extends AppCompatActivity {
                             form.setNIC(NIC.getText().toString().trim());
                             databaseReference = FirebaseDatabase.getInstance().getReference().child("Hotel").child(NIC.getText().toString().trim());
                             databaseReference.setValue(form);
-                            Toast.makeText(getApplicationContext(), "Your Booking Updated Successfully", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "Your Order Updated Successfully", Toast.LENGTH_SHORT).show();
                         }
                         else{
                             Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT).show();
